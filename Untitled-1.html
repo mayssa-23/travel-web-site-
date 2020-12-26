@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           My Travel web site
+        </title>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale =1.0">
+        <link rel="icon" href="to.png">
+        <link rel="stylesheet" href="style0.css">
+        <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <header>
+             <nav>
+                 <div class="wrapper">
+                   <ul class="nav-area">
+                     <li><a href="video.html">video</a></li>
+                     <li><a href="Untitled-01.html">infos</a></li>
+                     <li><a href="#reserve">Contact</a></li>
+                     <li><a href="#images">image</a></li>  
+                   </ul> 
+                 </div>
+                 <div class="container">
+                 <button type="button" class="login-btn"><a name="image">travel guid
+                 </a></button>
+               </div>
+             </nav>
+           </header>
+            <h1>
+                bien venue à notre distination
+            </h1>
+            <p>
+                Un agent de voyages rien que pour vous
+            </p>
+            <div class="search-box">
+                <input type="text" placeholder="Type to search..">
+                <div class="search-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+          <div class="cancel-icon">
+                  <i class="fas fa-times"></i>
+                </div>
+          <div class="search-data">
+          </div>
+            </div>
+            <script>
+              const searchBox = document.querySelector(".search-box");
+              const searchBtn = document.querySelector(".search-icon");
+              const cancelBtn = document.querySelector(".cancel-icon");
+              const searchInput = document.querySelector("input");
+              const searchData = document.querySelector(".search-data");
+              searchBtn.onclick =()=>{
+                searchBox.classList.add("active");
+                searchBtn.classList.add("active");
+                searchInput.classList.add("active");
+                cancelBtn.classList.add("active");
+                searchInput.focus();
+                if(searchInput.value != ""){
+                  var values = searchInput.value;
+                  searchData.classList.remove("active");
+                  searchData.innerHTML = "tu est just écriver: " + "<span style='font-weight: 500;'>" + values + "</span>";
+                }else{
+                  searchData.textContent = "";
+                }
+              }
+              cancelBtn.onclick =()=>{
+                searchBox.classList.remove("active");
+                searchBtn.classList.remove("active");
+                searchInput.classList.remove("active");
+                cancelBtn.classList.remove("active");
+                searchData.classList.toggle("active");
+                searchInput.value = "";
+              }
+            </script>
+        </section>
+        <section class="features">
+          <h1>Offres Promotionnelles</h1>
+          <h2>Une large sélection</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="feature-box">
+                  <div class="feature-img">
+                    <img src="ho.jpg">
+                    <div class="price">
+                      <p>
+                        78$
+                      </p>
+                    </div>
+                    <div class="rating">
+                      <i class="fa fa-star" ></i>
+                      <i class="fa fa-star" ></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
+                      <i class="fa fa-star-o"></i>
+                    </div>
+                  </div>
+                  <div class="feature-details">
+                    <h4>
+                      Hurawalhi Island Resort
+                    </h4>
+                    <p>
+                      Le chic au naturel l’amabilité du 
+                      personnel en plus du cadre du confort 
+                      de la chambre..aucune fausse note 
+                      tout est absolument parfait pour le
+                      confort des résidents et le lâcher 
+                      prise!.
+                    </p>
+                    <div>
+                      <span><i class="fa fa-sun-o"></i>4 jour</span>
+                      <span><i class="fa fa-moon-o"> 3 nuits</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature-box">
+                  <div class="feature-img">
+                    <img src="to.jpg">
+                    <div class="price">
+                      <p>
+                        98$
+                      </p>
+                    </div>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
+
+                    </div>
+                  </div>
+                  <div class="feature-details">
+                    <h4>
+                      Conrad Maldives Rangali Island
+                    </h4>
+                    <p>
+                      Belle hôtel avec d'excellentes prestations
+                      et un personnel au top.Les villas sur l'eau 
+                      sont fabuleuses.
+                    </p>
+                    <div>
+                      <span><i class="fa fa-sun-o"></i>4 jour</span>
+                      <span><i class="fa fa-moon-o"> 3 nuits</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature-box">
+                  <div class="feature-img">
+                    <img src="mo.jpg">
+                    <div class="price">
+                      <p>
+                        118$
+                      </p>
+                    </div>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="feature-details">
+                    <h4>
+                     Mercure Maldives Kooddoo Resort
+                    </h4>
+                    <p>
+                     Magnifiques bungalows luxueux à front d’océan
+                     dans une végétationtropicale et complexe principa
+                     très harmonieusement construitdevant l’océan et bordé
+                     d’une grandiose piscine à débordement le long d’uneterrasse 
+                     tout en bois.
+                    </p>
+                    <div>
+                      <span><i class="fa fa-sun-o"></i>4 jour</span>
+                      <span><i class="fa fa-moon-o"> 3 nuits</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="gallery">
+          <a name="images">
+          <h1>
+            Galerie Travellin
+          </h1>
+          <h2>Découvrir le monde</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="gallery-box">
+                  <img src="lo.jpg">
+                  <h4>
+                    les MalDives
+                  </h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="gallery-box">
+                  <img src="ch.jpg">
+                  <h4>
+                   W MalDives
+                  </h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="gallery-box">
+                  <img src="ry.jpg">
+                  <h4>
+                    Joali MalDives
+                  </h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="gallery-box">
+                  <img src="soneva.jpg">
+                  <h4>
+                    Soneva MalDives
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        </section>
+        <section class="bnin">
+          <a name="reserve"></a>
+          <div class="bnin-hello">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8">
+                  <h3>obtenez 30% sur
+                    la meilleure destination
+                  </h3>
+                  <p>
+                    réservez votre billet avant le
+                    31 mars et bénéficiez d'une 
+                    réduction forfaitaire de 30%.
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <buttom type="button"  class="booking-btn" >
+                    <a href="form.html">
+                      Réserver Maintenent
+                   </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="user">
+          <h1>
+            Avis Des Utilisateurs
+          </h1>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="user-riv">
+                  <p>“Friendly people and beautiful place,
+                    exactly how you would imagine it to be and more.”
+                 </p>
+                 <h5>
+                  Chris B
+                 </h5>
+                 <small>
+                  RATING 9/10
+                 </small>
+                </div>
+                <img src="pr2.png">
+              </div>
+              <div class="col-md-4">
+                <div class="user-riv">
+                  <p>“Friendly people and beautiful place,
+                    exactly how you would imagine it to be and more.”
+                 </p>
+                 <h5>
+                  Kevin B
+                 </h5>
+                 <small>
+                  RATING 10/10
+                 </small>
+                </div>
+                <img src="pr.png">
+              </div>
+              <div class="col-md-4">
+                <div class="user-riv">
+                  <p>“Fantastic. We love the Maldives
+                   and this was our 14th visit”
+                 </p>
+                 <h5>
+                  Margaret F
+                 </h5>
+                 <small>
+                  RATING 9/10
+                 </small>
+                </div>
+                <img src="pr2.png">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="gool">
+          <h1 class="me">Citation</h1>
+          <p>
+            « Tout ce qui vaut la peine d'être fait mérite d'être bien fait »
+          </p>
+          <small> Lord Chesterfield</small>
+        </section>
+        <section class="footer">
+          <h1>
+            Voyager en toute tranquillité
+          </h1>
+          <p>
+            Mon projet a été fondé(e) en 2020,
+            les meilleurs services d'agent de voyage.
+            J'ai toujours aimé rendre les gens heureux,
+            c'est pourquoi je mets tout en œuvre pour aider
+            mes clients à partir en voyage vers la destination 
+            de leurs rêves. J'offre à mes clients tous les services
+           dont ils ont besoin pour organiser leur voyage.
+          </p>
+          <div class="social">
+            <a href="https://www.facebook.com/"><i class=" fa fa-facebook-f"></i></a>
+            <a href="https://mobile.twitter.com/?lang=fr"><i class=" fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/"><i class=" fa fa-youtube"></i></a>
+            <a href="https://www.instagram.com/?hl=fr"><i class=" fa fa-instagram"></i></a>
+          </div>
+          <p class="col">
+            Crée Par MaySsa Saidani
+          </p>
+        </section > 
+        <div class="social-m">
+          <a href="https://www.facebook.com/"><i class=" fa fa-facebook-f"></i></a>
+          <a href="https://mobile.twitter.com/?lang=fr"><i class=" fa fa-twitter"></i></a>
+          <a href="https://www.youtube.com/"><i class=" fa fa-youtube"></i></a>
+          <a href="https://www.instagram.com/?hl=fr"><i class=" fa fa-instagram"></i></a>
+        </div>   
+    </body>
+</html>
